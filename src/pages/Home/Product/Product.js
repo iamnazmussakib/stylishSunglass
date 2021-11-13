@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Product = ({ product }) => {
     const { name, desc, price, img, _id } = product;
     return (
-        <Grid item xs={12} md={4}>
+        <Grid sx={{}} item xs={12} md={4}>
             <Paper elevation={3} sx={{ p: 5, textAlign: 'center' }}>
                 <img style={{ width: '100%' }} src={img} alt="" />
                 <h3>{name}</h3>

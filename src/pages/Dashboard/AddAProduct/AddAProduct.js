@@ -18,7 +18,7 @@ const AddAProduct = () => {
             name: productData.name,
             desc: productData.desc,
             details: productData.details,
-            price: productData.price,
+            price: `${productData.price} TK`,
             img: productData.img,
             status: 'pending'
         }
