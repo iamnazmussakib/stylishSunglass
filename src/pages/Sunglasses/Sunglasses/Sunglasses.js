@@ -1,5 +1,6 @@
 import { Container, Grid, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+import Footer from '../../Shared/Footer/Footer';
 import Navigation from '../../Shared/Navigation/Navigation';
 import Sunglass from '../Sunglass/Sunglass';
 
@@ -27,6 +28,7 @@ const Sunglasses = () => {
 
                 </Grid>
             </Container>
+            <Footer></Footer>
         </>
     );
 };

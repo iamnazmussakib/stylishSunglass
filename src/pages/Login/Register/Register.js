@@ -3,6 +3,7 @@ import { Box } from '@mui/system';
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import Footer from '../../Shared/Footer/Footer';
 import Navigation from '../../Shared/Navigation/Navigation';
 
 const Register = () => {
@@ -87,6 +88,7 @@ const Register = () => {
                 </Box>
 
             </Container>
+            <Footer></Footer>
         </>
     );
 };

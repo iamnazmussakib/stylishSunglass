@@ -24,12 +24,12 @@ const MyOrder = ({ order, myOrders, setMyOrders }) => {
         <Grid item xs={12} md={3}>
             <Paper sx={{ minHeight: '100%', m: 1, p: 1 }} elevation={3}>
                 <Typography sx={{ textTransform: 'uppercase', textAlign: 'center', my: 1 }} variant="h5" color="secondary">{status}</Typography>
-                <Button onClick={() => handleDelete(_id)} sx={{ width: '100%' }} color="secondary" variant="contained">Cencel Order</Button>
+                <Button onClick={() => handleDelete(_id)} sx={{ width: '100%', my: 1 }} color="secondary" variant="contained">Cencel Order</Button>
                 <img style={{ width: '100%' }} src={image} alt="" />
-                <h2>{productName}</h2>
-                <h4>Order From: {email}</h4>
-                <p>Phone: {phone}</p>
-                <p>Address: {address}</p>
+                <Typography sx={{ my: 2 }} variant="h5">{productName}</Typography>
+                <Typography sx={{ my: 2 }} variant="body1">Order From: {email}</Typography>
+                <Typography sx={{ my: 2 }} variant="body1">Phone: {phone}</Typography>
+                <Typography sx={{ my: 2 }} variant="body1">Address: {address}</Typography>
             </Paper>
         </Grid>
     );

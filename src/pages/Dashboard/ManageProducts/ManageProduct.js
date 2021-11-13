@@ -1,4 +1,4 @@
-import { Button, Grid, Paper } from '@mui/material';
+import { Button, Grid, Paper, Typography } from '@mui/material';
 import React from 'react';
 
 const ManageProduct = ({ product, allProducts, setAllProducts }) => {
@@ -23,9 +23,9 @@ const ManageProduct = ({ product, allProducts, setAllProducts }) => {
         <Grid item xs={12} md={4}>
             <Paper elevation={3} sx={{ p: 5, textAlign: 'center' }}>
                 <img style={{ width: '100%' }} src={img} alt="" />
-                <h3>{name}</h3>
-                <p><strong>Price: {price}</strong></p>
-                <p>{desc}</p>
+                <Typography sx={{ my: 2 }} variant="h5">{name}</Typography>
+                <Typography sx={{ my: 2 }} variant="body1">Price: {price}</Typography>
+                <Typography sx={{ my: 2 }} variant="body1">Price: {desc}</Typography>
                 <Button onClick={() => { handleDeleteBtn(_id) }} sx={{ width: '100%' }} color="secondary" variant="contained">Delete Product</Button>
             </Paper>
 

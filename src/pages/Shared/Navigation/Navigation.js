@@ -10,10 +10,12 @@ const Navigation = () => {
         <Box sx={{ flexGrow: 1 }}>
             <AppBar color="secondary" position="static">
                 <Toolbar sx={{ flexWrap: 'wrap' }}>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        StylishSunGlass
-                    </Typography>
-                    <Link style={{ textDecoration: 'none', color: 'white' }} to="/home">
+                    <Link to="/" style={{ color: 'white', textDecoration: 'none', flexGrow: 1 }}>
+                        <Typography variant="h6" component="div">
+                            StylishSunGlass
+                        </Typography>
+                    </Link>
+                    <Link style={{ textDecoration: 'none', color: 'white' }} to="/">
                         <Button color="inherit">Home</Button>
                     </Link>
                     <Link style={{ textDecoration: 'none', color: 'white' }} to="/sunglasses">

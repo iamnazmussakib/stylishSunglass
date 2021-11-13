@@ -2,6 +2,7 @@ import { Alert, Button, Container, Grid, Paper, TextField, Typography } from '@m
 import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router';
 import useAuth from '../../hooks/useAuth';
+import Footer from '../Shared/Footer/Footer';
 import Navigation from '../Shared/Navigation/Navigation';
 
 const SingleProduct = () => {
@@ -113,6 +114,7 @@ const SingleProduct = () => {
                     </Grid>
                 </Grid>
             </Container>
+            <Footer></Footer>
         </>
     );
 };
