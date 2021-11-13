@@ -8,7 +8,7 @@ const ManageOrder = ({ order, manageOrders, setManageOrders }) => {
     const handleDeleteBtn = id => {
         const procced = window.confirm('Are You Sure To Cencel This Order?');
         if (procced) {
-            fetch(`http://localhost:5000/orders/${id}`, {
+            fetch(`https://aqueous-ravine-85233.herokuapp.com/orders/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -23,7 +23,7 @@ const ManageOrder = ({ order, manageOrders, setManageOrders }) => {
     };
 
     const handleUpdate = id => {
-        fetch(`http://localhost:5000/orders/${id}`, {
+        fetch(`https://aqueous-ravine-85233.herokuapp.com/orders/${id}`, {
             method: 'PUT',
         })
             .then(res => res.json())

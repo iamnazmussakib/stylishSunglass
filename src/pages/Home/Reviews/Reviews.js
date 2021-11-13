@@ -17,7 +17,7 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 function Reviews() {
     const [ratings, setRatings] = React.useState([]);
     React.useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://aqueous-ravine-85233.herokuapp.com/reviews')
             .then(res => res.json())
             .then(data => setRatings(data));
     }, [])

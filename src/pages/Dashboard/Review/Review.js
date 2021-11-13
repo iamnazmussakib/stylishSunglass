@@ -13,7 +13,7 @@ const Review = () => {
     console.log(handleRating);
     const handleClick = () => {
         const rate = { rating: handleRating, userName: user.displayName }
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://aqueous-ravine-85233.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

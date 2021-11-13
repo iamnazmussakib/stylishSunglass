@@ -6,7 +6,7 @@ const MyOrder = ({ order, myOrders, setMyOrders }) => {
     const handleDelete = id => {
         const procced = window.confirm('Are You Sure To Cencel This Order?');
         if (procced) {
-            fetch(`http://localhost:5000/orders/${id}`, {
+            fetch(`https://aqueous-ravine-85233.herokuapp.com/orders/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

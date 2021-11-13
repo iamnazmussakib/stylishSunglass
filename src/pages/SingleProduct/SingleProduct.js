@@ -14,7 +14,7 @@ const SingleProduct = () => {
     const [orderSuccess, setOrderSuccess] = useState(false);
     const { sunglassId } = useParams();
     useEffect(() => {
-        fetch(`http://localhost:5000/sunglasses/${sunglassId}`)
+        fetch(`https://aqueous-ravine-85233.herokuapp.com/sunglasses/${sunglassId}`)
             .then(res => res.json())
             .then(data => setSinglsProduct(data));
     }, [])
@@ -37,7 +37,7 @@ const SingleProduct = () => {
             address: productData.address,
             status: singleProduct?.status
         }
-        fetch('http://localhost:5000/orders', {
+        fetch('https://aqueous-ravine-85233.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

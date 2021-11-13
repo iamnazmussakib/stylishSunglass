@@ -6,7 +6,7 @@ const ManageProduct = ({ product, allProducts, setAllProducts }) => {
     const handleDeleteBtn = id => {
         const procced = window.confirm('Are You Sure To Delete This Product?');
         if (procced) {
-            fetch(`http://localhost:5000/sunglasses/${id}`, {
+            fetch(`https://aqueous-ravine-85233.herokuapp.com/sunglasses/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

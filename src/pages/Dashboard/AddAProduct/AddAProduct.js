@@ -23,7 +23,7 @@ const AddAProduct = () => {
             status: 'pending'
         }
         if (productData.img && productData.name && productData.desc) {
-            fetch('http://localhost:5000/sunglasses', {
+            fetch('https://aqueous-ravine-85233.herokuapp.com/sunglasses', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
