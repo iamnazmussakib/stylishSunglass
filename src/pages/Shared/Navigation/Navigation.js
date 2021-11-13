@@ -1,4 +1,4 @@
-import { AppBar, Button, IconButton, Toolbar, Typography } from '@mui/material';
+import { AppBar, Button, Toolbar, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -13,7 +13,7 @@ const Navigation = () => {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         StylishSunGlass
                     </Typography>
-                    <Link style={{ textDecoration: 'none', color: 'white' }} to="/appointment">
+                    <Link style={{ textDecoration: 'none', color: 'white' }} to="/sunglasses">
                         <Button color="inherit">Sunglasses</Button>
                     </Link>
                     <Link style={{ textDecoration: 'none', color: 'white' }} to="/dashboard">
