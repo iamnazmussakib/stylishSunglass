@@ -13,25 +13,20 @@ This is the project [Stylish Sunglass](https://stylish-sunglass.web.app/).
 
 ## Available Oppurtunity
 
-What You Can Do?
+What you can do?
 
-### `many products`
+### `Products`
 
-You can choose the product from here and buy this product.
+Products can be purchased.
 
 ### `My Orders`
 
-You can Delete on my orders page.
+You can delete orders from the 'orders' page.
 
 ### `User Review`
 
-You can give us review on dashboard/review page.
+You can give us review on the dashboard/review page.
 
-### `Admin Role`
+### `Admin Capabilities`
 
-An admin can see manage all orders, manage all products, make admin, add a product.
-
-### `Admin Can?`
-
-An admin can delete any order, delete any product, and admin can make another admin.
-
+An admin can manage all products, orders, make admin, add a product.
