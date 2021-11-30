@@ -19,9 +19,9 @@ What you can do?
 
 Products can be purchased.
 
-### `My Orders`
+### `User`
 
-You can delete orders from the 'orders' page.
+A user can delete orders from the 'orders' page. And user can see the orders status.
 
 ### `User Review`
 
